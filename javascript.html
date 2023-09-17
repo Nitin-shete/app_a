@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Tabs Example</title>
+  <!-- Add Bootstrap CSS via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"  aria-controls="tab1" aria-selected="true">Tab 1</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab content -->
+    <div class="tab-content" id="myTabsContent">
+
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        <div class="container mt-4">
+    <div class="row">
+      <!-- First Card -->
+      <div class="col-md-4 mb-3 tab1_a">
+        <div class="card  one" >
+          <img src="https://media.istockphoto.com/id/1458805217/photo/a-book-left-open-in-the-classroom.jpg?s=2048x2048&w=is&k=20&c=2xTL9FVLlVe9YvX-MN3Yxm5FiRsma9fMDqfQJHE_DX0=" class="card-img-top" alt="Card Image" width="200" height="200">
+          <div class="card-body">
+            <h5 class="card-title">TAB 1</h5>
+            <p class="card-text">This is some sample text for Card 1.</p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary select_model" id="this_firt_button" data-toggle="modal" data-target="#exampleModal">select
+        </button>
+      </div>
+
+      <!-- Second Card -->
+      <div class="col-md-4 mb-3 tab2_a">
+        <div class="card two">
+          <img src="https://media.istockphoto.com/id/1383889737/photo/i-love-this-story.jpg?s=2048x2048&w=is&k=20&c=M4ISlTER229GisCzZhuk0djosRmytoTzEP0Cv262PTE=" class="card-img-top" alt="Card Image" width="200" height="200">
+          <div class="card-body">
+            <h5 class="card-title">TAB 2</h5>
+            <p class="card-text">This is some sample text for Card 2.</p> 
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary select_model" id="two"  data-toggle="modal" data-target="#exampleModal">select
+        </button>
+      </div>
+
+       <div class="col-md-4 mb-3 tab1_a">
+        <div class="card three">
+          <img src="https://media.istockphoto.com/id/1458805217/photo/a-book-left-open-in-the-classroom.jpg?s=2048x2048&w=is&k=20&c=2xTL9FVLlVe9YvX-MN3Yxm5FiRsma9fMDqfQJHE_DX0=" class="card-img-top" alt="Card Image" width="200" height="200">
+          <div class="card-body">
+            <h5 class="card-title">TAB 1</h5>
+            <p class="card-text content ">This is some sample text for Card 3 .</p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary select_model" id="three" data-toggle="modal" data-target="#exampleModal">select
+        </button>
+      </div>
+
+      <!-- Third Card -->
+      <div class="col-md-4 mb-3 tab2_a">
+        <div class="card four">
+          <img src="https://media.istockphoto.com/id/1383889737/photo/i-love-this-story.jpg?s=2048x2048&w=is&k=20&c=M4ISlTER229GisCzZhuk0djosRmytoTzEP0Cv262PTE=" class="card-img-top" alt="Card Image" width="200" height="200">
+          <div class="card-body">
+            <h5 class="card-title">TAB 2 </h5>
+            <p class="card-text">This is some sample text for Card 4.</p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary select_model"  id="four" data-toggle="modal" data-target="#exampleModal">select
+        </button>
+      </div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+<!-- Button trigger modal -->
+<!-- Modal -->
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <p> this my first model</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-secondary small-button">Remove Me</button>
+
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary tab_mb1">tab 1</button>
+        <button type="button" class="btn btn-primary tab_mb2 ">tab 2</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#tab1-tab').click();
+
+});
+
+$('#tab2-tab').click(function(e) {
+   $('.tab1_a').hide();
+   $('.tab2_a').show();
+   $('.tab_mb2').hide();
+   $('.tab_mb1').show();
+   $('#tab2-tab').addClass('active');
+   $('#tab1-tab').removeClass('active');
+});
+$('#tab1-tab').click(function(e) {
+   $('.tab2_a').hide();
+   $('.tab1_a').show();
+   $('.tab_mb1').hide();
+   $('.tab_mb2').show();
+   $('#tab1-tab').addClass('active');
+   $('#tab2-tab').removeClass('active');
+});
+ 
+$('.tab_mb1').click(function(e) {
+  $('#tab1-tab').click();
+  $('#exampleModal').modal('hide');
+  $('.tab_mb2').hide();
+  
+});
+
+$('.tab_mb2').click(function(e) {
+  $('#tab2-tab').click();
+  $('#exampleModal').modal('hide');
+  $('.tab_mb1').hide();
+  
+});
+
+
+$('.select_model').click(function(e) {
+  var buttonId = $(this).attr('id');
+  $('.modal-body').append('<div>New content here..'+buttonId+'</div>');
+
+
+});
+
+ 
+// $('.model_select').click(function(e) {
+//   var id = $(this).attr('id');
+//   alert()
+//   $('#exampleModal').show(); 
+// }
+
+
+
+</script>
